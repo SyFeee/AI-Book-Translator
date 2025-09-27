@@ -1,0 +1,23 @@
+This is a test document for the AI Translator application.
+
+It contains multiple paragraphs that will be processed and translated.
+
+Chapter 1: Introduction
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Proin efficitur, nisl eu finibus posuere, nisi nisl aliquam nisi, vel tincidunt nisl nisl vel nisi. Donec euismod, nisl eu tincidunt consectetur, nisl nisl aliquam nisi, vel tincidunt nisl nisl vel nisi.
+
+Chapter 2: Methods
+
+The methods used in this study were based on previous research by Smith et al. (2022). We applied natural language processing techniques to analyze the data collected from various sources. Statistical analysis was performed using R version 4.2.1 with custom scripts.
+
+Chapter 3: Results
+
+Our results indicate a significant improvement in translation quality when using context-aware models compared to traditional approaches. Table 1 summarizes the main findings from our experiments.
+
+Chapter 4: Discussion
+
+The implications of our findings are manifold. First, we demonstrate that preserving context between segments is crucial for maintaining coherent translations. Second, specialized vocabulary handling improves technical document translation substantially.
+
+References:
+1. Smith, J., & Johnson, B. (2022). Context-aware translation systems. Journal of AI Research, 45(2), 78-92.
+2. Lee, C., & Park, S. (2023). Advances in neural machine translation. Computational Linguistics Today, 12(3), 112-128.

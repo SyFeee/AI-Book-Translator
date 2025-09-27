@@ -1,0 +1,32 @@
+Provide a detailed technical explanation of the end-to-end pipeline used by modern AI-powered book translation platforms, using the provided ScribeShadow screenshots as a conceptual example of the user interface. The explanation should be suitable for someone with a basic understanding of AI/LLMs who wants to understand the specific challenges and solutions for translating long-form documents like novels.
+
+Please structure your response with clear headings to address the following key stages and questions:
+
+**1. Document Pre-processing:**
+* Once a user uploads a book (e.g., in `.docx` or `.epub` format), how is the text extracted?
+* What happens to non-text elements like images, tables, and complex formatting? How is the core text prepared for the translation model?
+
+**2. Chunking Strategy for Long-Form Text:**
+* Explain why a book cannot be translated by an LLM in a single request due to context window limitations.
+* Describe and compare common chunking strategies. For instance:
+    * **Fixed-Size Chunking:** Splitting by a set number of words, sentences, or paragraphs.
+    * **Semantic Chunking:** Splitting at logical breaks like chapters, sections, or scene changes to preserve narrative structure.
+    * **Recursive Chunking:** A more advanced method of breaking down large chunks into smaller ones.
+
+**3. Maintaining Context and Coherence (Core Requirement):**
+* This is the most critical area. Detail the specific techniques used to ensure consistency in translation across hundreds of separate chunks. Explain how these systems maintain coherence for:
+    * **Plot Points:** Ensuring continuity of the story.
+    * **Character Voices:** Keeping a character's tone and style of speaking consistent.
+    * **Terminology:** Consistently translating key terms, character names, and place names.
+* Discuss the technical methods to achieve this, such as:
+    * **Sliding Context Windows / Overlapping Chunks:** Passing the translation of the previous chunk as context for the next one.
+    * **Global Context Injection:** Including a global summary, a character list, or a glossary of terms within the prompt for each chunk.
+    * **Vector Databases for Retrieval-Augmented Generation (RAG):** Using a database to retrieve relevant translated passages or established terminology to inform the translation of the current chunk.
+
+**4. The Core LLM Translation Process:**
+* What does the prompt sent to the LLM for each chunk typically look like? Please provide a hypothetical example prompt.
+* Are these systems likely using general-purpose models (like GPT-4, Claude 3) via an API, or do they use models that are specifically fine-tuned for literary translation?
+
+**5. Post-processing and Reassembly:**
+* After all individual chunks are translated, how are they stitched back together into a single document?
+* What automated steps are taken to clean up the final output and reconstruct the original formatting as closely as possible?

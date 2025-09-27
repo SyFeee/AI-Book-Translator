@@ -1,0 +1,19 @@
+Chapter 1: The Beginning
+
+This is the first chapter of our test document. It contains some sample text to demonstrate the chapter extraction and chunking functionality.
+
+Maria walked through the Royal Academy. The ancient halls echoed with the footsteps of countless scholars who had walked these paths before her.
+
+Chapter 2: The Middle
+
+This is the second chapter. It should be extracted separately from the first chapter and maintain proper ordering.
+
+She carried a leather-bound notebook filled with observations from her travels. Each page contained detailed sketches and notes about the local customs.
+
+Chapter 3: The End
+
+This is the third chapter, which should come after the second chapter and not be duplicated.
+
+The professor smiled as he reviewed her work. "Your attention to detail is remarkable," he said, adjusting his glasses.
+
+End of document.

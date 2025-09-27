@@ -1,0 +1,21 @@
+[TRANSLATED] This is the first chapter of our test document. It contains some sample text to demonstrate the chapter extraction and chunking functionality. This paragraph is deliberately made longer to ensure that the document will be split into multiple chunks when processing, which will help us debug the 2-segment duplication issue that occurs specifically when documents are split into exactly two parts during the translation process.
+
+Maria walked through the Royal Academy. The ancient halls echoed with the footsteps of countless scholars who had walked these paths before her. She carried a leather-bound notebook filled with observations from her travels. Each page contained detailed sketches and notes about the local customs she had encountered during her extensive journey across the continent.
+
+The morning sun streamed through the tall windows, casting long shadows across the marble floors. Students and professors moved purposefully through the corridors, their conversations a mixture of scholarly debate and casual discussion about their research projects and ongoing studies.
+
+[TRANSLATED] Chapter 2: The Middle
+
+This is the second chapter. It should be extracted separately from the first chapter and maintain proper ordering. The second chapter contains additional content that should ensure the document gets split into multiple chunks during processing, allowing us to test the specific scenario where documents are divided into exactly two segments.
+
+She carried a leather-bound notebook filled with observations from her travels. Each page contained detailed sketches and notes about the local customs. The professor reviewed her work carefully, paying particular attention to the detailed illustrations and comprehensive notes that demonstrated her thorough understanding of the subject matter.
+
+Her research methodology was particularly impressive, showing a deep understanding of both theoretical frameworks and practical applications. The combination of field observations and academic analysis created a comprehensive picture of the cultural phenomena she was studying.
+
+[TRANSLATED] Chapter 3: The End
+
+This is the third chapter, which should come after the second chapter and not be duplicated. This final chapter serves as a conclusion to the test document and should maintain the proper sequence when the document is processed and reassembled after translation.
+
+The professor smiled as he reviewed her work. "Your attention to detail is remarkable," he said, adjusting his glasses. "This level of scholarship represents exactly the kind of rigorous analysis we expect from our advanced students."
+
+End of document.
